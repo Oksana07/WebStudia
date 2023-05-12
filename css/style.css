@@ -82,3 +82,20 @@ letter-spacing: 0.03em;
 
 color: #757575;
 }
+
+.title{
+    font-size: 36px;
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
