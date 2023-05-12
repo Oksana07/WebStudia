@@ -13,6 +13,29 @@ width: 1px !important;
 overflow: hidden;
 }
 
+.section-title{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+    
+color: #212121;
+}
+
+.logo{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+   
+letter-spacing: 0.03em;
+    
+color: #2196F3;
+}
+
 /* Герой */
 .hero{
     background-color:#2F303A;
@@ -83,19 +106,43 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.title{
-    font-size: 36px;
-    color: blue;
+/* Чим ми займаємося  */
+
+/* Наша команда */
+
+.our-teem{
+    background-color: #F5F4FA;
 }
 
-.red{
-    color: red;
+.our-teem-title{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
 }
 
-.blue{
-    color: blue;
+.our-teem-text{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #757575;
 }
 
-.green{
-    color: green;
+/* Футер */
+.footer{
+    background-color: #2F303A;
+}
+
+.logo-footer{
+    color: #FFFFFF;
 }
