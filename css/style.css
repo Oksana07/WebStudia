@@ -38,6 +38,10 @@ color: #212121;
     color: #2196F3;
 }
 
+.section{
+    margin-bottom: 94px;
+}
+
 .logo{
 font-family: 'Raleway';
 font-style: normal;
@@ -63,6 +67,15 @@ line-height: 16px;
 letter-spacing: 0.02em;
 
 color: #212121;
+}
+
+.menu-list{
+    display: flex;
+   
+}
+
+.menu-item{
+    margin-left: 50px;
 }
 
 
@@ -149,10 +162,18 @@ color: #757575;
 
 /* Чим ми займаємося  */
 
+.our-works-list{
+    display: flex;
+}
+
 /* Наша команда */
 
 .our-teem{
     background-color: #F5F4FA;
+}
+
+.our-teem-list{
+    display: flex;
 }
 
 .our-teem-title{
