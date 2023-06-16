@@ -69,6 +69,9 @@ padding-right: 15px;
 }
 
 /* header */
+.top-navigation{
+    display: flex;
+}
 
 .logo{
 font-family: 'Raleway';
@@ -99,6 +102,7 @@ color: #212121;
 
 .menu-list{
     display: flex;
+    margin-left: 93px;
    
 }
 
@@ -106,6 +110,14 @@ color: #212121;
     margin-left: 50px;
 }
 
+.list-contakts{
+    display: flex;
+    margin-left: auto;
+}
+
+.list-contakts >.item{
+    margin-left: 50px;
+}
 
 .header-contakt{
 font-style: normal;
