@@ -290,18 +290,44 @@
         <!-- modsl -->
         <div class="backdrop js-backdrop">
             <div class="modal">
-                <h2>Modal window</h2>
-                <p>
-                    In user interface design for computer applications, a modal window is
-                    a graphical control element subordinate to an application's main
-                    window. It creates a mode that disables the main window but keeps it
-                    visible, with the modal window as a child window in front of it. Users
-                    must interact with the modal window before they can return to the
-                    parent application. This avoids interrupting the workflow on the main
-                    window. Modal windows are sometimes called heavy windows or modal
-                    dialogs because they often display a dialog box.
-                </p>
-                <button type="button" class="button" data-action="close-modal">
+                <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                <button class="modal-btn">
+                    <svg class="modal-icon-close" width="18" height="18">
+                        <use href="./images/svg/symbol-defs.svg#icon-vector-modal"></use>
+                    </svg>
+                </button>
+
+                <form class="modal-form">
+                    <div class="form-fiel">
+                        <label for="username" class="form-label">
+                            Ім'я
+                            <input class="form-input" type="text" id="username" autofocus>
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/svg/symbol-defs.svg#icon-person-modal"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-fiel">
+                        <label for="userertel" class="form-label">
+                            Телефон
+                            <input class="form-input" type="tel" id="userertel">
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/svg/symbol-defs.svg#icon-phone-modal"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-fiel">
+                        <label for="useremail" class="form-label">
+                            Пошта
+                            <input class="form-input" type="text" id="useremail">
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/svg/symbol-defs.svg#icon-email-modal"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </form>
+
+                <button type="submit" class="modal-button" data-action="close-modal">
                     Закрити
                 </button>
             </div>
