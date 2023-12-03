@@ -668,8 +668,7 @@ footer > .container {
 
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
-    transform: translateY(0);
-        
+    transform: translateY(0);   
 }
 
 .overlay-text {
@@ -891,7 +890,7 @@ body.show-modal .modal {
     background-color: #fff;
 }
 
-/*  */
+/*  кнопка скрол */
 .go-top {
     position: fixed;
     right: 20px;
