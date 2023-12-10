@@ -61,6 +61,11 @@ img {
 .link:hover,
 .link:focus {
     color: #2196f3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -232,6 +237,7 @@ img {
     border-radius: 4px;
 
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -391,6 +397,8 @@ img {
     border-radius: 50%;
     fill: #afb1b8;
     background-color: #fff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -421,6 +429,8 @@ img {
     border: 1px solid #afb1b8;
 
     padding: 16px 32px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-customers-list > .item:hover,
@@ -435,13 +445,14 @@ img {
     align-items: center;
 }
 
+.customers-svg {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .customers-svg:hover,
 .customers-svg:focus {
     fill: #2196f3;
-}
-
-.customers-svg {
-    fill: #afb1b8;
 }
 
 /* Футер */
@@ -497,6 +508,8 @@ footer > .container {
     border-radius: 50%;
     fill: white;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover,
@@ -531,9 +544,11 @@ footer > .container {
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input:focus-within{
+.footer-input:focus-within {
     border-color: #2196f3;
 }
 
@@ -553,10 +568,12 @@ footer > .container {
     border-radius: 4px;
     background: #2196f3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn:hover,
-.footer-btn:focus{
+.footer-btn:focus {
     background-color: #2195f3b9;
     cursor: pointer;
 }
@@ -585,6 +602,8 @@ footer > .container {
     background-color: #f5f4fa;
     border-radius: 4px;
     color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -606,6 +625,10 @@ footer > .container {
 
 .portfolio-list > .item {
     flex-basis: calc((100% - 60px) / 3);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list > .item:hover,
@@ -644,35 +667,32 @@ footer > .container {
 
 .tex {
     width: 300px;
-
 }
 
 /* оверлей */
-.portfolio-thumb{
+.portfolio-thumb {
     position: relative;
     overflow: hidden;
-
 }
 
-.portfolio-overlay{
+.portfolio-overlay {
     position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform: translateY(100%);
-        background-color: rgba(33, 150, 243, 0.9);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        /* background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
-    transform: translateY(0);   
+    transform: translateY(0);
 }
 
 .overlay-text {
-    color: #FFF;
+    color: #fff;
     font-size: 18px;
     padding: 63px 24px;
     font-weight: 400;
@@ -749,7 +769,8 @@ body.show-modal .modal {
     border-radius: 50%;
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -797,7 +818,7 @@ body.show-modal .modal {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus-within {
@@ -809,6 +830,8 @@ body.show-modal .modal {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-position:focus-within .modal-icon {
@@ -823,6 +846,8 @@ body.show-modal .modal {
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedback:focus-within {
@@ -882,6 +907,9 @@ body.show-modal .modal {
     background: #2196f3;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
