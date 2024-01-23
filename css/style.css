@@ -177,8 +177,7 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.png);
   height: 600px;
 }
-
-.hero-title {
+.hero__hero-title {
   margin: 0 auto 30px;
   max-width: 696px;
   font-weight: 900;
@@ -189,8 +188,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-
-.hero-btn {
+.hero__hero-btn {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -209,9 +207,7 @@ img {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__hero-btn:hover, .hero__hero-btn:focus {
   background-color: rgba(33, 149, 243, 0.7254901961);
 }
 
@@ -219,7 +215,29 @@ img {
   padding-top: 94px;
 }
 
-.advantages-svg {
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.advantages-list__advantages-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.advantages-list__advantages-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.advantages-list__advantages-svg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,33 +248,8 @@ img {
   margin-bottom: 30px;
 }
 
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.advantages-list > .item {
+.advantages-list > .advantages-list__item {
   flex-basis: calc((100% - 90px) / 4);
-}
-
-.advantages-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.advantages-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .our-works-list {
