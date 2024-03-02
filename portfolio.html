@@ -23,8 +23,10 @@
             <nav class="top-navigation">
                 <a href="/" class="logo link"><span class="span-logo">Web</span>Studio</a>
                 <ul class="menu-list list">
-                    <li class="menu-list__item"><a href="./index.html" class="menu-list__menu-link link">Студія</a></li>
-                    <li class="menu-list__item"><a href="" class="menu-list__menu-link link curren">Портфоліо</a></li>
+                    <li class="menu-list__item"><a href="./index.html"
+                            class="menu-list__menu-link link curren">Студія</a></li>
+                    <li class="menu-list__item"><a href="" class="menu-list__menu-link link">Портфоліо</a>
+                    </li>
                     <li class="menu-list__item"><a href="" class="menu-list__menu-link link">Контакти</a></li>
                 </ul>
             </nav>
@@ -41,23 +43,20 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
-        </div>
-        <!--  -->
-        <button class="mobile-btn">
-            <svg class="mobile-icon">
-                <use href="./images/svg/symbol-defs.svg#menu-icon"></use>
-            </svg>
-            <svg class="mobile-close">
-                <use href="./images/svg/symbol-defs.svg#close-menu"></use>
-            </svg>
-        </button>
+            <!--  -->
+            <button class="button-mobile " data-menu-button>
+                <svg class="icon-mobile " aria-label="Переключатель меню">
+                    <use class="menu-icon" href="./images/svg/symbol-defs.svg#menu-icon"></use>
+                    <use class="menu-close" href="./images/svg/symbol-defs.svg#close-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <!-- мобільне меню -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
         <ul class="mobile-list">
-            <li class="item"><a href="./index.html" class="mobile-link">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="mobile-link curren-menu">Портфоліо</a></li>
+            <li class="item"><a href="./index.html" class="mobile-link ">Студія</a></li>
+            <li class="item"><a href="" class="mobile-link curren-menu">Портфоліо</a></li>
             <li class="item"><a href="" class="mobile-link">Контакти</a></li>
         </ul>
 
@@ -74,8 +73,8 @@
         </ul>
     </div>
     <main>
-        <section class="section portfolio">
-            <!-- <div class="container">
+        <!-- <section class="section portfolio"> -->
+        <!-- <div class="container">
                 <ul class="list-btn list">
                     <li class="item"><button type="button" class="filter-btn">Усе</button></li>
                     <li class="item"><button type="button" class="filter-btn">Веб-сайти</button></li>
@@ -84,7 +83,7 @@
                     <li class="item"><button type="button" class="filter-btn">Маркетинг </button></li>
                 </ul> -->
 
-            <!-- <ul class="portfolio-list list">
+        <!-- <ul class="portfolio-list list">
                     <li class="item">
                         <a href="" class="portfolio-link">
                             <div class="portfolio-thumb">
@@ -243,7 +242,7 @@
                     </li>
                 </ul>
             </div> -->
-        </section>
+        <!-- </section> -->
     </main>
     <!-- Футер -->
     <footer class="footer">
@@ -266,28 +265,28 @@
             </div>
             <div class="widget-blok">
                 <h3 class="footer-title">приєднуйтесь</h3>
-                <!-- social-list -->
+
                 <ul class="social-list-footer">
-                    <li class="social-item"><a href="" class="social-link-footer">
-                            <svg class="socoal-svg" width="20" height="20">
+                    <li class="social-list__social-item"><a href="" class="social-list-footer__social-link-footer">
+                            <svg class="social-list-footer__socoal-svg" width="20" height="20">
                                 <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item"><a href="" class="social-link-footer">
-                            <svg class="socoal-svg" width="20" height="20">
+                    <li class="social-list__social-item"><a href="" class="social-list-footer__social-link-footer">
+                            <svg class="social-list-footer__socoal-svg" width="20" height="20">
                                 <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item"><a href="" class="social-link-footer">
-                            <svg class="socoal-svg" width="20" height="20">
+                    <li class="social-list__social-item"><a href="" class="social-list-footer__social-link-footer">
+                            <svg class="social-list-footer__socoal-svg" width="20" height="20">
                                 <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item"><a href="" class="social-link-footer">
-                            <svg class="socoal-svg" width="20" height="20">
+                    <li class="social-list__social-item"><a href="" class="social-list-footer__social-link-footer">
+                            <svg class="social-list-footer__socoal-svg" width="20" height="20">
                                 <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -299,8 +298,8 @@
             <div class="widget-blok">
                 <h3 class="footer-title">Підпишіться на розсилку</h3>
                 <form class="footer-form">
-                    <input type="email" placeholder="E-mail" class="footer-input">
-                    <button type="button" class="footer-btn">підписатися
+                    <input type="email" placeholder="E-mail" class="footer-form__footer-input">
+                    <button type="button" class="footer-form__footer-btn">підписатися
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
@@ -321,7 +320,8 @@
     </div>
 
 
-    <script src="./js/go-top.js"></script>
+    <script src="./js/go-top.js" type="module"></script>
+    <script src="./js/mobile.js" type="module"></script>
 
 </body>
 

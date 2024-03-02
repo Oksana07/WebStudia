@@ -42,19 +42,17 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
-            <!--  -->
-            <button class="mobile-btn">
-                <svg class="mobile-icon">
-                    <use href="./images/svg/symbol-defs.svg#menu-icon"></use>
-                </svg>
-                <svg class="mobile-close">
-                    <use href="./images/svg/symbol-defs.svg#close-menu"></use>
+            <!-- button-mobile -->
+            <button class="button-mobile" data-menu-button>
+                <svg class="icon-mobile " aria-label="Переключатель меню">
+                    <use class="menu-icon" href="./images/svg/symbol-defs.svg#menu-icon"></use>
+                    <use class="menu-close" href="./images/svg/symbol-defs.svg#close-menu"></use>
                 </svg>
             </button>
         </div>
     </header>
     <!-- мобільне меню -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
         <ul class="mobile-list">
             <li class="item"><a href="" class="mobile-link curren-menu">Студія</a></li>
             <li class="item"><a href="./portfolio.html" class="mobile-link">Портфоліо</a></li>
@@ -495,6 +493,7 @@
 
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/go-top.js" type="module"></script>
+    <script src="./js/mobile.js" type="module"></script>
 </body>
 
 </html>
